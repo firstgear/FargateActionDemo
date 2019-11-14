@@ -3,6 +3,7 @@
     "networkMode": "awsvpc", 
     "containerDefinitions": [
         {
+            "executionRoleArn": "arn:aws:iam::362401963040:role/github-actions-ecr",
             "name": "fargate-app", 
             "image": "httpd:2.4", 
             "portMappings": [
